@@ -1,0 +1,405 @@
+\documentclass{thapathali}
+
+% ============================================
+% CUSTOMIZABLE VARIABLES - Lean Software Development
+% ============================================
+\projecttitle{LEAN SOFTWARE DEVELOPMENT}
+\projectsubtitle{Core Philosophy, Principles, and Implementation}
+\newcommand{\studentone}{Prasiddha Raj Poudel}
+\newcommand{\rollone}{THA080BCT027}
+\newcommand{\studenttwo}{Pratik Pant}
+\newcommand{\rolltwo}{THA080BCT028}
+\newcommand{\studentthree}{Purnima Bhandari}
+\newcommand{\rollthree}{THA080BCT029}
+\newcommand{\studentfour}{}
+\newcommand{\rollfour}{}
+
+% Used in structural settings
+\presentername{\studentone}
+\studentroll{\rollone}
+\supervisorname{Dr. Supervisor Name}
+\supervisortitle{Associate Professor}
+\departmentname{Department of Electronics and Computer Engineering}
+\institutionname{Institute of Engineering, Thapathali Campus}
+\presentationdate{June 26, 2026}
+\academicyear{Academic Year: 2026/2027}
+
+% ============================================
+% TITLE PAGE SETUP
+% ============================================
+\csname title\endcsname[\ProjectTitle]{\ProjectTitle}
+\subtitle{\ProjectSubtitle}
+\author[\studentone]{\studentone, \studenttwo, \studentthree}
+\institute[\DepartmentName]{\DepartmentName}
+\date[\PresentationDate]{\PresentationDate}
+
+% ============================================
+% DOCUMENT BEGINS
+% ============================================
+\begin{document}
+
+% ============================================
+% TITLE SLIDE (Plain, White, Centered)
+% ============================================
+\begin{frame}[plain]
+    \begin{center}
+        \vspace{0.8cm}
+        {\Large \bfseries \ProjectTitle \par}
+        \vspace{1.5em}
+        {\normalsize \bfseries Team Members:\par}
+        \vspace{0.3em}
+        {\small \studentone{} (\rollone)\par}
+        {\small \studenttwo{} (\rolltwo)\par}
+        {\small \studentthree{} (\rollthree)\par}
+        \vfill
+        {\normalsize \DepartmentName\par}
+        {\normalsize \InstitutionName\par}
+        \vspace{0.3em}
+        {\normalsize \PresentationDate\par}
+    \end{center}
+\end{frame}
+
+% ============================================
+% PRESENTATION OUTLINE
+% ============================================
+\begin{frame}{Presentation Outline}
+    \begin{itemize}
+        \item Origins and Philosophy of Lean
+        \item Traditional Problems and Solution
+        \item The Seven Process Wastes
+        \item The 7 Core Lean Principles
+        \item Tools and Practical Comparison
+        \item Advantages, Disadvantages, and Case Study
+    \end{itemize}
+\end{frame}
+
+% ============================================
+% SECTION: ORIGINS AND PHILOSOPHY (Member 1)
+% ============================================
+
+% Page 2
+\begin{frame}{What is Lean Software Development?}
+    Lean Software Development is a software development approach that focuses on delivering maximum value to customers while minimizing waste.
+    \vspace{0.8em}
+    
+    \textbf{Key Points}
+    \begin{itemize}
+        \item Inspired by Lean Manufacturing and the Toyota Production System
+        \item Adapted for software development by Mary and Tom Poppendieck
+        \item Emphasizes efficiency, quality, and customer satisfaction
+        \item Supports Agile and Continuous Delivery practice
+    \end{itemize}
+\end{frame}
+
+% Page 3
+\begin{frame}{Why Lean Was Introduced}
+    \textbf{Problems with Traditional Development}
+    \vspace{0.5em}
+    
+    \begin{itemize}
+        \item Traditional software development required extensive documentation before coding began.
+        \item A large amount of time and effort was spent creating documents.
+        \item Documents often became outdated as project requirements changed.
+        \item This reduced efficiency and slowed down software delivery.
+        \item Feedback was often received late in the development process.
+        \item Late changes increased project cost, effort, and delays.
+    \end{itemize}
+\end{frame}
+
+% Page 4
+\begin{frame}{Lean Solution}
+    \begin{itemize}
+        \item Lean focuses on delivering value to customers as quickly as possible.
+        \item Working software is released in smaller and more frequent increments.
+        \item Continuous feedback helps teams improve and adapt to changes.
+        \item Waste is minimized, improving overall efficiency and productivity.
+    \end{itemize}
+\end{frame}
+
+% Page 5
+\begin{frame}{The Seven Wastes in Software Development}
+    \textbf{Seven Types of Waste}
+    \vspace{0.4em}
+    
+    \begin{enumerate}
+        \item \textbf{Partially Done Work} - Incomplete tasks that are not yet useful
+        \item \textbf{Extra Features} - Features that customers do not need
+        \item \textbf{Relearning} - Loss of knowledge requiring repeated effort
+        \item \textbf{Task Switching} - Reduced productivity from multitasking
+        \item \textbf{Waiting} - Delays between development activities
+        \item \textbf{Handoffs} - Information loss during communication
+        \item \textbf{Defects} - Errors that require correction and rework
+    \end{enumerate}
+\end{frame}
+
+% Page 6
+\begin{frame}{Core Philosophy of Lean}
+    \begin{center}
+        "Deliver maximum customer value with minimum waste."
+    \end{center}
+    \vspace{0.6em}
+    
+    \textbf{Key Concepts}
+    \begin{itemize}
+        \item Focus on customer needs
+        \item Eliminate non-value-adding activities
+        \item Improve the entire development process
+        \item Build quality into every stage
+        \item Deliver software quickly and continuously
+    \end{itemize}
+    \vspace{0.4em}
+    Lean helps organizations create high-quality software faster, with lower costs and greater customer satisfaction.
+\end{frame}
+
+% ============================================
+% SECTION: THE 7 PRINCIPLES (Member 2)
+% ============================================
+
+% Page 7
+\begin{frame}[plain]
+    \begin{center}
+        \vspace{2cm}
+        {\Large \bfseries The 7 principles of lean software development}
+    \end{center}
+\end{frame}
+
+% Page 8
+\begin{frame}{Eliminate Waste}
+    \begin{center}
+        \textit{If it doesn't add value for the user --- remove it.}
+    \end{center}
+    \vspace{0.8em}
+    
+    \begin{itemize}
+        \item Remove unused features, duplicate steps, and unnecessary waiting
+        \item Avoid writing code that nobody asked for
+        \item Less clutter means faster delivery and a cleaner codebase
+        \item Waste includes: delays, defects, extra processes, and over-engineering
+    \end{itemize}
+\end{frame}
+
+% Page 9
+\begin{frame}{Build Quality In}
+    \begin{center}
+        \textit{Catch problems early --- prevention is cheaper than repair.}
+    \end{center}
+    \vspace{0.8em}
+    
+    \begin{itemize}
+        \item Test code as it is written, not after the entire product is done
+        \item Use automated test suites so every change is verified instantly
+        \item Code reviews and pair programming catch issues before they ship
+        \item A bug fixed in development costs $10\times$ less than one found in production
+    \end{itemize}
+\end{frame}
+
+% Page 10
+\begin{frame}{Create Knowledge}
+    \begin{center}
+        \textit{Learn continuously and share what you know.}
+    \end{center}
+    \vspace{0.8em}
+    
+    \begin{itemize}
+        \item Document decisions and the reasons behind them
+        \item Hold short retrospectives after each sprint or milestone
+        \item Maintain a shared wiki so lessons reach the whole team
+        \item Don't repeat the same mistakes i.e. knowledge compounds over time
+    \end{itemize}
+\end{frame}
+
+% Page 11
+\begin{frame}{Defer Commitment}
+    \begin{center}
+        \textit{Delay big decisions until you have enough information.}
+    \end{center}
+    \vspace{0.8em}
+    
+    \begin{itemize}
+        \item Keep options open as long as it's practical to do so
+        \item Avoid expensive, hard-to-reverse choices made on early assumptions
+        \item Gather data and user feedback before locking in an architecture
+        \item Decide at 'the last responsible moment' --- not the last possible moment
+    \end{itemize}
+\end{frame}
+
+% Page 12
+\begin{frame}{Deliver Fast}
+    \begin{center}
+        \textit{Release early, release often - get feedback sooner.}
+    \end{center}
+    \vspace{0.8em}
+    
+    \begin{itemize}
+        \item Break large projects into short, shippable work cycles
+        \item Deliver small updates rather than one massive release
+        \item Fast delivery surfaces problems before they snowball
+        \item Speed reduces risk i.e. smaller batches are easier to test and roll back
+    \end{itemize}
+\end{frame}
+
+% Page 13
+\begin{frame}{Respect People}
+    \begin{center}
+        \textit{Trust your team and give them real ownership.}
+    \end{center}
+    \vspace{0.8em}
+    
+    \begin{itemize}
+        \item Let developers make decisions about their own work
+        \item Listen to feedback and act on what the team surfaces
+        \item Protect work-life balance to sustain long-term performance
+        \item Psychological safety drives creativity and honest communication
+    \end{itemize}
+\end{frame}
+
+% Page 14
+\begin{frame}{Optimize the Whole}
+    \begin{center}
+        \textit{Look at the entire pipeline, not just one step.}
+    \end{center}
+    \vspace{0.8em}
+    
+    \begin{itemize}
+        \item Speeding up one stage can create bottlenecks elsewhere
+        \item Map the full journey from idea to production deployment
+        \item Remove handoff delays between teams (dev $\to$ QA $\to$ ops)
+        \item Global optimisation beats local improvements every time
+    \end{itemize}
+\end{frame}
+
+% Page 15
+\begin{frame}{The 7 Principles of Lean Software Development}
+    Lean software development is about doing more with less: less waste, fewer delays, and fewer surprises --- while still respecting the people who build the product.
+    \vspace{0.5em}
+    
+    \begin{itemize}
+        \item \textbf{Eliminate Waste} - cut anything that doesn't create user value
+        \item \textbf{Build Quality In} - test continuously, prevent defects early
+        \item \textbf{Create Knowledge} - document, share, and learn from every cycle
+        \item \textbf{Defer Commitment} - decide later when you know more
+        \item \textbf{Deliver Fast} - ship in small batches and iterate quickly
+        \item \textbf{Respect People} - trust your team and encourage ownership
+        \item \textbf{Optimize the Whole} - improve the full pipeline, not just one part
+    \end{itemize}
+\end{frame}
+
+% ============================================
+% SECTION: PRACTICES AND TOOLS (Member 3)
+% ============================================
+
+% Page 16
+\begin{frame}{Tools \& Techniques in Lean}
+    \textbf{Value Stream Mapping (VSM)}
+    \begin{itemize}
+        \item Diagrams every step from requirement to delivery
+        \item Highlights delays, waste, and unnecessary handoffs
+    \end{itemize}
+    \vspace{0.3em}
+    
+    \textbf{Kanban Board}
+    \begin{itemize}
+        \item Visualizes tasks: To Do, In Progress, Done
+        \item Limits work-in-progress to prevent overload
+    \end{itemize}
+    \vspace{0.3em}
+    
+    \textbf{Pull-Based Scheduling}
+    \begin{itemize}
+        \item Work begins only when team has capacity
+        \item Prevents bottlenecks from piling up downstream
+    \end{itemize}
+    \vspace{0.3em}
+    
+    \textbf{Continuous Integration}
+    \begin{itemize}
+        \item Code tested automatically after every change
+        \item Defects caught immediately, not at release
+    \end{itemize}
+\end{frame}
+
+% Page 17
+\begin{frame}{Lean vs Agile Development}
+    Lean is a philosophy; Agile is a methodology
+    \vspace{0.3em}
+    
+    Both reject heavy upfront planning and documentation
+    \vspace{0.3em}
+    
+    Agile Manifesto (2001) was shaped by Lean thinking
+    \vspace{0.3em}
+    
+    Scrum implements Lean through sprints and roles
+    \begin{itemize}
+        \item Roles: Product Owner, Scrum Master, Dev Team
+        \item Fixed iterations: typically 1--4 week sprints
+    \end{itemize}
+    \vspace{0.3em}
+    Lean has no fixed iterations or prescribed roles
+    \vspace{0.3em}
+    
+    Key shared goal: deliver working software faster
+\end{frame}
+
+% Page 18
+\begin{frame}{Advantages}
+    \begin{itemize}
+        \item Reduces time from requirement to working software
+        \item Defects caught early cost significantly less to fix
+        \item Removes steps that add no customer value
+        \item Frequent releases allow continuous user feedback
+        \item Developers given autonomy produce higher quality work
+        \item Cleaner code reduces long-term maintenance cost
+    \end{itemize}
+\end{frame}
+
+% Page 19
+\begin{frame}{Disadvantages}
+    \begin{itemize}
+        \item Requires full organizational commitment to work
+        \item Difficult without experienced and disciplined team members
+        \item Reduced documentation risks long-term maintainability
+        \begin{itemize}
+            \item System knowledge becomes dependent on individuals
+            \item New members struggle without proper documentation
+        \end{itemize}
+        \item Over-reliance on key members increases project risk
+        \item Progress and improvement difficult to measure objectively
+    \end{itemize}
+\end{frame}
+
+% Page 20
+\begin{frame}{Case Study: Toyota Production System}
+    \begin{itemize}
+        \item Large batch production hid defects until very late
+        \item Value stream mapping revealed primary delay points
+        \begin{itemize}
+            \item Handoffs between stations were main bottleneck
+        \end{itemize}
+        \item Kanban introduced to pull work by actual capacity
+        \item Defects surfaced and resolved immediately at each stage
+        \item Software teams later applied same principles to code delivery
+    \end{itemize}
+\end{frame}
+
+% Page 21
+\begin{frame}{Conclusion}
+    \begin{itemize}
+        \item Lean targets root causes of software project failure
+        \item Waste elimination improves both speed and quality
+        \item Agile and Lean share the same foundational goals
+        \item Documentation remains critical despite Lean's speed focus
+        \item Team capability determines how well Lean is applied
+        \item Lean thinking applies across any development context
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[plain]
+    \begin{center}
+        \vspace{1.5cm}
+        {\huge \bfseries Thank You} \\[1em]
+        {\large Questions \& Answers}
+    \end{center}
+\end{frame}
+
+\end{document}
